@@ -65,7 +65,7 @@ app.post("/", async function (req, res) {
             }
         });
 
-        res.redirect('/#contacts');
+        res.redirect('./#contacts');
     } catch (error) {
         console.error('Error saving contact form submission to MongoDB:', error);
         res.status(500).send('Internal Server Error');
